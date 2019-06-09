@@ -1,0 +1,43 @@
+Java
+Package module_2
+/*This is a program to calculate the total cost of mangos, state, and county taxes
+ *The numbers of mangos, state, and county taxes purchased are input by the user. */
+
+import java.util.Scanner;
+public class Module_2_Example {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		//Variables
+		int apples;	//Number of mangos purchased
+		int state;	//Number of state taxes
+		int county;	//Number of county taxes
+		double mangoCost;	//Cost of mangos	
+		double stateCost;	//Cost of state taxes
+		double countyCost; 	//Cost of county taxes
+		//Constant for cost of mangos and taxes
+		double ONE_MANGO = 100;
+		double ONE_STATE = 0.04;
+		double ONE_COUNTY = 0.02;
+		//Get the number of mangos purchased
+		System.out.printIn(“Please enter the number of mangos purchased: “);
+		Mangos = scan.nextInt();
+		//Get the state tax
+		System.out.println(“Please enter the state tax: “);
+		state = scan.nextInt();
+		//Get the county tax
+		System.out.println(“Please enter the county tax: “);
+		County = scan.nextInt();
+		//Determine mango cost
+		mangoCost = ONE_MANGO * mangos;
+		//Determine state tax
+		stateCost = ONE_STATE * state;
+		//Determine county tax
+		countyCost = ONE_COUNTY * county;
+		//Display the cost of mangos
+		System/out/println(“The cost of mangos is “ + mangoCost + “.”);
+		//Display the cost of taxes
+		System.out.println(“The cost of sales taxes is “ + stateCost + countyCost + “.”);
+		//Display the total cost
+		System.out.println(“The total cost is “ + (mangoCost + stateCost + countyCost) + “.”);
+	}
+}
